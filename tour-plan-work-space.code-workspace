@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "tour-plan",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "discounts-on-chainsaws"
+  }
+}
