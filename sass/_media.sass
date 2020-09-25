@@ -2,10 +2,10 @@
 @media (max-width: 1200px)
    .container
       max-width: 960px
-   .slider
-      width: 590px 
-   .swiper
-      &-slide
+   .hotel
+      &__slider
+         width: 590px 
+      &-slider
          &__image
             width: 100%
             height: 100%
@@ -40,12 +40,16 @@
          margin-bottom: 30px
       &-right
          flex-direction: row
+      &-slider
+         width: 100%
    .booking
       width: 340px
-   .slider
-      width: 100%
    .map
       width: 340px
+   .reviews
+      &-slider
+         &__item
+            max-width: 580px
    // Max-width 768px
 @media (max-width: 768px)
    .container
@@ -87,13 +91,13 @@
             display: none
          &__offer
             order: -1
-            margin-left: 0
-   .slider
-      height: 350px
+            margin-left: 0 
    .hotel
       &-right
          flex-direction: column
          min-height: 450px
+      &-slider
+         height: 350px
    .booking
       width: 100%
    .map
@@ -111,15 +115,35 @@
          &__strong
             font-size: 30px
             line-height: 38px
+   .reviews
+      &__title
+         font-size: 30px
+         line-height: 38px
+      &-slider
+         &__item
+            padding: 0 30px 30px
+            &:after, &:before
+               display: none
+         &__button
+            top: 32px
+            &--prev
+               margin-left: -65px
+               left: 50%
+               transform: translate(-50%, 0)
+            &--next
+               margin-right: -65px
+               right: 50%
+               transform: translate(50%, 0)
 // Max-width 576px
 @media (max-width: 576px)
    .logo
       width: 99px
-   .slider
-      height: 250px
+   
    .hotel
       &-slider
          margin-bottom: 20px
+      &__slider
+         height: 250px
    .newsletter
       padding: 76px 0 83px 0
       &__title
@@ -131,5 +155,11 @@
             line-height: 38px
    .subscribe
       width: 100%
+   .reviews
+      &__title
+         margin-bottom: 42px
+         font-size: 18px
+         line-height: 23px
+
 
    
