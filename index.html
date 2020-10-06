@@ -13,6 +13,9 @@
   <!-- Swiper Slider -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="css/aos.css">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,16 +25,17 @@
   <header class="navbar navbar__mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
           <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image" />
         </a>
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+        <form action="#" data-aos="fade-right" data-aos-delay="200"
+          class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" placeholder="Search Location" class="search__input" />
           <button class="search__button">
             <img src="img/search.svg" alt="icon: search" />
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+        <a href="#" data-aos="fade-right" data-aos-delay="100" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: nathan" class="user__avatar" />
           <span class="user__name">Nathan</span>
         </a>
@@ -214,12 +218,12 @@
   <!-- Newsletter -->
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <div class="newsletter-title newsletter__title">
+      <div class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-delay="300">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </div>
       <!-- /.newsletter-title -->
-      <form action="#" class="subscribe newsletter__subscribe">
+      <form action="#" class="subscribe newsletter__subscribe" data-aos="fade-left" data-aos-delay="300">
         <input type="email" placeholder="Your email address" class="subscribe__input" />
         <button class="subscribe__button">Send</button>
       </form>
@@ -342,28 +346,28 @@
       <div class="activities__title">Other Activities</div>
       <!-- /.activities__title -->
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner
           of chamarel" class="card__image" />
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
           course" class="card__image" />
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image" />
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
           quest" class="card__image" />
           <h3 class="card__title">The blue marine discovery quest</h3>
@@ -578,6 +582,9 @@
 
   <!-- jQuery Validate -->
   <script src="js/jquery.validate.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="js/aos.js"></script>
 
   <!-- Main js -->
   <script src="js/main.js"></script>
