@@ -62,21 +62,37 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не короче 2-вух букв",
+          required: "Please enter your name",
+          minlength: "The name must be at least 2 letters long",
         },
         email: {
-          required:
-            "Нам нужен ваш адрес электронной почты, чтобы с вами связаться",
-          email:
-            "Ваш адрес электронной почты должен быть в формате name@domain.com",
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Phone is required",
+          number: "The phone must consist of numbers",
+        },
+      },
+      rules: {
+        phone: {
+          required: true,
+          minlength: 17,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        name: {
+          required: true,
+          minlength: 2,
         },
       },
     });
   });
+
+  // Mask
+  $(".tel").mask("+7 (000) 000-0000");
 
   // AOS
   AOS.init();
